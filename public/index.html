@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="calculator">
+
+            <div id="userInput">
+
+                <input type="text" id="result">
+            </div>
+            <div id="keyboard">
+                <button class="operator" onclick="clearResult()">C</button>
+                <button class="operator" onclick="backSpace()">&#8592;</button>
+                <button class="operator" onclick="getNumber('%')">%</button>
+                <button class="operator" onclick="getNumber('/')">&#247;</button>
+                <button class="number" onclick="getNumber('7')">7</button>
+                <button class="number" onclick="getNumber('8')">8</button>
+                <button class="number" onclick="getNumber('9')">9</button>
+                <button class="operator" onclick="getNumber('*')">&times;</button>
+                <button class="number" onclick="getNumber('4')">4</button>
+                <button class="number" onclick="getNumber('5')">5</button>
+                <button class="number" onclick="getNumber('6')">6</button>
+                <button class="operator" onclick="getNumber('-')">-</button>
+                <button class="number" onclick="getNumber('1')">1</button>
+                <button class="number" onclick="getNumber('2')">2</button>
+                <button class="number" onclick="getNumber('3')">3</button>
+                <button class="operator" onclick="getNumber('+')">+</button>
+                <button class="empty" onclick="getNumber('.')">.</button>
+                <button class="number" onclick="getNumber('0')">0</button>
+                <button class="empty" onclick="getNumber('00')">00</button>
+                <button class="operator" onclick="getResult()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
